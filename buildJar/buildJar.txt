@@ -1,0 +1,8 @@
+Go to selma ~/workspace/intermine-like-run/src $
+javac org/intermine/like/api/TestClass.java org/intermine/like/request/LikeRequest.java org/intermine/like/request/LikeService.java org/intermine/like/request/MatrixStore.java org/intermine/like/response/LikeResult.java org/intermine/like/run/RunTime.java org/intermine/Coordinates.java org/intermine/like/run/utils/Methods.java -d ~/workspace/intermine-like-run/bin
+
+Go to selma ~/workspace/intermine-like-run/bin $
+jar cmf ~/workspace/intermine-like-run/buildJar/Manifest.txt like-run.jar -C ~/workspace/intermine-like-run/resources . -C ~/workspace/intermine-like-run/buildJar . org
+
+To run: 
+java -jar like-run.jar
